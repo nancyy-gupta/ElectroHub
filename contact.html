@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+  background-color: #264040;
+}
+    .contact-page {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    
+      .contact-header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    
+      .contact-form {
+        margin-bottom: 20px;
+      }
+    
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      label {
+        margin-bottom: 10px;
+      }
+    
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+    
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    
+      button[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    
+      .contact-info {
+        margin-top: 20px;
+      }
+    
+      .contact-info h2 {
+        margin-bottom: 10px;
+      }
+    
+      .contact-info p {
+        margin-bottom: 10px;
+      }
+      .contact-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+    </style>
+
+</head>
+<div class="contact-page">
+  <h1 class="contact-header">Get in Touch</h1>
+  <div class="contact-form">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+<button type="submit" onclick="validateForm()">Send Message</button>
+
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  if (name == "" || email == "" || message == "") {
+    alert("Please fill out all fields.");
+  } else {
+    alert("Message sent successfully!");
+  }
+}
+</script>
+<hr>
+<hr style="border: 1px solid #ccc; margin: 20px 0;">
+    </form>
+  </div>
+  <div class="contact-info">
+    <h2>Our Contact</h2>
+    <p>9267958191</p>
+    <p><div nikitakashyap@gmail.com=""></div>Email : nikitakashyap@gmail.com</p>
+    <p>Address: 489, Electro Hub, Mahavir Enclave Part 2 , New Delhi - 110076</p>
+  </div>
+</div>
+<footer class="contact-footer">
+  <p>&copy; 2024 | Electro Hub | All rights reserved.</p>
+</footer>
+</body>
+</html>
